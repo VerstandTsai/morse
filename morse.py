@@ -61,8 +61,8 @@ class Morse:
             f.setframerate(self.samplerate)
             f.writeframes(soundbytes)
 
-morse = Morse(0.05, 44100, 700)
-morse.fromtext('Welcome to Wikipedia, the free encyclopedia that anyone can edit.')
-
-morse.export('morse.wav')
+if __name__ == '__main__':
+    morse = Morse(0.05, 44100, 700)
+    morse.fromtext("All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.")
+    morse.export('morse.wav')
 

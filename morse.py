@@ -41,7 +41,7 @@ class Morse:
         text = text.upper()
         for c in text:
             if c == ' ':
-                self.add_note(self.unittime * 7, True)
+                self.add_note(self.unittime * 4, True)
                 continue
             if not c in self.morse_table:
                 continue
